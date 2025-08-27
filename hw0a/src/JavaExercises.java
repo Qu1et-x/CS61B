@@ -14,8 +14,8 @@ public class JavaExercises {
     public static void starTriangle() {
         // TODO: Fill in this function
         int line = 5;
-        for (int i = 0; i < line; i ++) {
-            for (int j = 0; j <= i; j ++) {
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print('*');
             }
             System.out.println();
@@ -30,7 +30,7 @@ public class JavaExercises {
         // TODO: Fill in this function
         int length = s.length();
         int index = length - 1;
-        for (int i = 0; i < length; i ++) {
+        for (int i = 0; i < length; i++) {
             char letter = s.charAt(i);
             System.out.print(letter);
             System.out.print(index);
@@ -46,8 +46,8 @@ public class JavaExercises {
     public static String stutter(String s) {
         // TODO: Fill in this function
         String w = "";
-        for (int i = 0; i < s.length(); i ++) {
-            for (int j = 0; j < 2; j ++) {
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = 0; j < 2; j++) {
                 w += s.charAt(i);
             }
         }
@@ -67,14 +67,11 @@ public class JavaExercises {
         // TODO: Fill in this function
         if (x > 0 && y > 0) {
             return 1;
-        }
-        else if (x < 0 && y > 0) {
+        } else if (x < 0 && y > 0) {
             return 2;
-        }
-        else if (x < 0 && y < 0) {
+        } else if (x < 0 && y < 0) {
             return 3;
-        }
-        else if (x > 0 && y < 0){
+        } else if (x > 0 && y < 0) {
             return 4;
         }
         return 0;
@@ -84,10 +81,10 @@ public class JavaExercises {
         starTriangle();
         printIndexed("hello");
         System.out.println(stutter("hello"));
-        System.out.println(quadrant(3, 4));  // Output: 1
-        System.out.println(quadrant(-3, 4)); // Output: 2
-        System.out.println(quadrant(-3, -4));// Output: 3
-        System.out.println(quadrant(3, -4)); // Output: 4
-        System.out.println(quadrant(0, 5));  // Output: 0
+        System.out.println(quadrant(3, 4));   // Output: 1
+        System.out.println(quadrant(-3, 4));  // Output: 2
+        System.out.println(quadrant(-3, -4)); // Output: 3
+        System.out.println(quadrant(3, -4));  // Output: 4
+        System.out.println(quadrant(0, 5));   // Output: 0
     }
 }
