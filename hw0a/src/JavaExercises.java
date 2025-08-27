@@ -45,13 +45,13 @@ public class JavaExercises {
      */
     public static String stutter(String s) {
         // TODO: Fill in this function
-        String w = "";
+        StringBuilder w = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             for (int j = 0; j < 2; j++) {
-                w += s.charAt(i);
+                w.append(s.charAt(i));
             }
         }
-        return w;
+        return w.toString();
     }
 
     /**
